@@ -14,6 +14,7 @@
 		08939DF6288D73380004446F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08939DF4288D73380004446F /* LaunchScreen.storyboard */; };
 		08939DFE288D752F0004446F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08939DFD288D752F0004446F /* TableViewController.swift */; };
 		08E77787289DB56F006C42D8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E77786289DB56F006C42D8 /* CustomTableViewCell.swift */; };
+		08E77789289DB975006C42D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E77788289DB975006C42D8 /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		08939DF7288D73380004446F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08939DFD288D752F0004446F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		08E77786289DB56F006C42D8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		08E77788289DB975006C42D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				08939DF4288D73380004446F /* LaunchScreen.storyboard */,
 				08939DF7288D73380004446F /* Info.plist */,
 				08E77786289DB56F006C42D8 /* CustomTableViewCell.swift */,
+				08E77788289DB975006C42D8 /* PlaceModel.swift */,
 			);
 			path = CheckinPlaces;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				08939DEA288D73320004446F /* AppDelegate.swift in Sources */,
 				08939DEC288D73320004446F /* SceneDelegate.swift in Sources */,
+				08E77789289DB975006C42D8 /* PlaceModel.swift in Sources */,
 				08E77787289DB56F006C42D8 /* CustomTableViewCell.swift in Sources */,
 				08939DFE288D752F0004446F /* TableViewController.swift in Sources */,
 			);
