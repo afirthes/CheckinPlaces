@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main menu-->
+        <!--My fav places-->
         <scene sceneID="cgV-8f-iHm">
             <objects>
                 <tableViewController id="tpS-cL-23R" customClass="TableViewController" customModule="CheckinPlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="tpS-cL-23R" id="4mq-Pc-XKf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Main menu" id="XWb-wX-Fyi"/>
+                    <navigationItem key="navigationItem" title="My fav places" id="XWb-wX-Fyi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h32-pZ-okd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +43,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="piU-iB-g5Z">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="42"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="tpS-cL-23R" kind="relationship" relationship="rootViewController" id="l80-2t-Sql"/>

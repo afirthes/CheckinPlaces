@@ -29,11 +29,19 @@ class TableViewController: UITableViewController {
         let restaurantName = restaurantNames[indexPath.row]
         cell.textLabel?.text = restaurantName
         cell.imageView?.image = UIImage(named: restaurantName)
+        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2
+        cell.imageView?.clipsToBounds = true
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+    }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
     }
 
 }
