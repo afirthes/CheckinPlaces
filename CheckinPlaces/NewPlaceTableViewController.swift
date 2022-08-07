@@ -26,6 +26,6 @@ extension NewPlaceTableViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
-        // Some minor change 123
+        // Some minor change
     }
 }
