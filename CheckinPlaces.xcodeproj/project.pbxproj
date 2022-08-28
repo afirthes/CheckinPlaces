@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088F066128BBDC5100877584 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F066028BBDC5100877584 /* StorageManager.swift */; };
 		08939DEA288D73320004446F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08939DE9288D73320004446F /* AppDelegate.swift */; };
 		08939DEC288D73320004446F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08939DEB288D73320004446F /* SceneDelegate.swift */; };
 		08939DF1288D73320004446F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08939DEF288D73320004446F /* Main.storyboard */; };
@@ -16,9 +17,11 @@
 		08C604D4289E31D600DF635A /* NewPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C604D3289E31D600DF635A /* NewPlaceTableViewController.swift */; };
 		08E77787289DB56F006C42D8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E77786289DB56F006C42D8 /* CustomTableViewCell.swift */; };
 		08E77789289DB975006C42D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E77788289DB975006C42D8 /* PlaceModel.swift */; };
+		466926FCCA89695CC57F8A84 /* Pods_CheckinPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47041E239418A8DC62C26B73 /* Pods_CheckinPlaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		088F066028BBDC5100877584 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		08939DE6288D73320004446F /* CheckinPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckinPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08939DE9288D73320004446F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08939DEB288D73320004446F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		08C604D3289E31D600DF635A /* NewPlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceTableViewController.swift; sourceTree = "<group>"; };
 		08E77786289DB56F006C42D8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		08E77788289DB975006C42D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		47041E239418A8DC62C26B73 /* Pods_CheckinPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckinPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D15429423CB03760D4BC6DB /* Pods-CheckinPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckinPlaces.release.xcconfig"; path = "Target Support Files/Pods-CheckinPlaces/Pods-CheckinPlaces.release.xcconfig"; sourceTree = "<group>"; };
+		EB2F5F832A412492F3DA3D95 /* Pods-CheckinPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckinPlaces.debug.xcconfig"; path = "Target Support Files/Pods-CheckinPlaces/Pods-CheckinPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466926FCCA89695CC57F8A84 /* Pods_CheckinPlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				08939DE8288D73320004446F /* CheckinPlaces */,
 				08939DE7288D73320004446F /* Products */,
+				A2CDAB285D2683F60C0F521D /* Pods */,
+				5AA39698DFB97CDEFE01CE1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +81,26 @@
 				08E77786289DB56F006C42D8 /* CustomTableViewCell.swift */,
 				08C604D3289E31D600DF635A /* NewPlaceTableViewController.swift */,
 				08E77788289DB975006C42D8 /* PlaceModel.swift */,
+				088F066028BBDC5100877584 /* StorageManager.swift */,
 			);
 			path = CheckinPlaces;
+			sourceTree = "<group>";
+		};
+		5AA39698DFB97CDEFE01CE1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47041E239418A8DC62C26B73 /* Pods_CheckinPlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2CDAB285D2683F60C0F521D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F5F832A412492F3DA3D95 /* Pods-CheckinPlaces.debug.xcconfig */,
+				8D15429423CB03760D4BC6DB /* Pods-CheckinPlaces.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08939DFA288D73380004446F /* Build configuration list for PBXNativeTarget "CheckinPlaces" */;
 			buildPhases = (
+				265D578D1669230757D2C5E5 /* [CP] Check Pods Manifest.lock */,
 				08939DE2288D73320004446F /* Sources */,
 				08939DE3288D73320004446F /* Frameworks */,
 				08939DE4288D73320004446F /* Resources */,
+				A39E07AEC6A3D61DEE810EB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		265D578D1669230757D2C5E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckinPlaces-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A39E07AEC6A3D61DEE810EB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckinPlaces/Pods-CheckinPlaces-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckinPlaces/Pods-CheckinPlaces-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckinPlaces/Pods-CheckinPlaces-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08939DE2288D73320004446F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,6 +221,7 @@
 				08C604D4289E31D600DF635A /* NewPlaceTableViewController.swift in Sources */,
 				08939DEA288D73320004446F /* AppDelegate.swift in Sources */,
 				08939DEC288D73320004446F /* SceneDelegate.swift in Sources */,
+				088F066128BBDC5100877584 /* StorageManager.swift in Sources */,
 				08E77789289DB975006C42D8 /* PlaceModel.swift in Sources */,
 				08E77787289DB56F006C42D8 /* CustomTableViewCell.swift in Sources */,
 				08939DFE288D752F0004446F /* TableViewController.swift in Sources */,
@@ -294,6 +366,7 @@
 		};
 		08939DFB288D73380004446F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2F5F832A412492F3DA3D95 /* Pods-CheckinPlaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,9 +375,11 @@
 				DEVELOPMENT_TEAM = QQ5FDJWTRX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheckinPlaces/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow camera usage to make selfy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,12 +391,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		08939DFC288D73380004446F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D15429423CB03760D4BC6DB /* Pods-CheckinPlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,9 +406,11 @@
 				DEVELOPMENT_TEAM = QQ5FDJWTRX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheckinPlaces/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow camera usage to make selfy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,7 +422,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
